@@ -96,7 +96,7 @@ jobs:
       with:
         resource-group: RG-APPS-CRESCER
         dns-name-label: lab-crescer-giovane-tiburcio
-        images: giovanetiburcio/javacrescer:latest
+        image: giovanetiburcio/javacrescer:latest
         cpu: 1
         memory: 1
         registry-login-server: docker.io
