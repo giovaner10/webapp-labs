@@ -84,7 +84,7 @@ jobs:
   Deploy:
     name: publicar imagem azure
     needs: push-image
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
     - name: Login via azure cli
       uses: azure/login@v1
