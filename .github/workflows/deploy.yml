@@ -38,17 +38,7 @@ jobs:
        run: ./mvnw verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=lab-crescer-pipeline
        env:
          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-  # horusec-security:
-  #   name: Horusec Security
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - name: Check out code
-  #     uses: actions/checkout@v2
-  #     with: # Necessário quando habilitado o autores de commit
-  #       fetch-depth: 0
-  #   - name: Running Horusec Security
-  #     run: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest horusec start -p="./" -e="true"      
+     
         
   tests:
     name: Testes automatizados
